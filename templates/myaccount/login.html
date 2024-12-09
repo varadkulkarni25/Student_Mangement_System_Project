@@ -1,0 +1,26 @@
+{% extends "masterpage.html" %}
+
+{% block title%}
+     Login
+{% endblock title %}
+
+{% block body %}
+<div style="width: 35%; margin: auto; border: 2px solid black; padding: 15px; background-color: darkgray; margin-top: 20px;">
+     <h1 style="text-align: center;">Login</h1>
+     {% include "messages.html" %}
+
+     <form method="post">
+          {% csrf_token %}
+          <div class="form-group">
+            <label for="un">User Name</label>
+            <input type="text" class="form-control" id="un" aria-describedby="emailHelp" placeholder="Enter Username" name="uname">
+           
+          </div>
+          <div class="form-group">
+            <label for="p">Password</label>
+            <input type="password" class="form-control" id="p" placeholder="Password" name="pass">
+          </div>
+          <button type="submit" class="btn btn-primary">Login</button>
+        </form>
+</div>
+{% endblock body %}

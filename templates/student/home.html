@@ -1,0 +1,85 @@
+{% extends "masterpage.html" %}
+
+{% block title %}
+     home
+{% endblock title %}
+
+{% block body %}
+<div class="card bg-dark text-white">
+    <img  style="opacity: 0.5;"card-img src="https://image.slidesdocs.com/responsive-images/background/modern-classroom-powerpoint-background_af3f8e6ae1__960_540.jpg" alt="Card image" height="500px">
+    <div class="card-img-overlay"><center>
+      <marquee>
+      <h2 class="card-title"><h1><samp style="color: orange;">T</samp>he <samp style="color: orange;">V</samp>K <samp style="color: orange;">A</samp>cademy
+      </h1></center></marquee>
+    </h2><hr>
+    {%include "messages.html" %}
+      <h3>Top rated IT Training Classes in Pune</h3>
+      <h2>Java, Selenium, Python, MERN Stack, .Net Courses
+        100% Job Placement Support</h2><br><br>
+<center>
+<a href="{% url 'registration' %}"class="btn btn-primary btn-lg">Register For Demo</a></center>
+
+    </div>
+  </div>
+  <center> <h1 style="margin: 20px;">Most Popular IT Training Courses in Pune</h1>
+  <h4 style="margin-bottom: 40px;">Software Industry Offers High-Paying Jobs for the most demanding IT Courses - Java, Selenium, Python, AWS, Azure, Salesforce</h4>
+  </center>
+  
+
+  <div class="card-group">
+    <div class="card">
+      <img class="card-img-top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSM-5qSK-SAHFql3ZTLdBe2PjbP2ILSmbN4Ks9piGq2W0jt1DFyG3pVkrlzdyOPdgIGkPw&usqp=CAU" alt="Card image cap">
+      <div class="card-body">
+        <h3 class="card-title">Python Programming Language</h3>
+        <p class="card-text">Python is a high-level, general-purpose programming language. Its design philosophy emphasizes code readability with the use of significant indentation.
+
+          Python is dynamically typed and garbage-collected. It supports multiple programming paradigms, including structured (particularly procedural), object-oriented and functional programming. It is often described as a "batteries included" language due to its comprehensive standard library.
+          
+          Guido van Rossum began working on Python in the late 1980s as a successor to the ABC programming language and first released it in 1991 as Python 0.9.0. Python 2.0 was released in 2000. Python 3.0, released in 2008, was a major revision not completely backward-compatible with earlier versions. Python 2.7.18, released in 2020, was the last release of Python 2.
+          
+          Python consistently ranks as one of the most popular programming languages, and has gained widespread use in the machine learning community</p><br>
+
+          <a href="{% url 'python'%}" class="btn btn-info">Learn More</a>
+
+          <a href="{% url 'registration'%}" class="btn btn-info">Registration</a>
+      </div>
+      <div class="card-footer">
+        <small class="text-muted">Last updated 3 mins ago</small>
+      </div>
+    </div>
+    <div class="card">
+      <img class="card-img-top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHAf1blrxcYwhbLhLyA1QgPp-XwUkU7JrcKHZynCLCcc4UQ8mJQmiu2U6ioqyyifd1Vbg&usqp=CAU" alt="Card image cap">
+      <div class="card-body">
+        <h3 class="card-title">Java Programming Language</h3>
+        <p class="card-text">Java is a high-level, class-based, object-oriented programming language that is designed to have as few implementation dependencies as possible. It is a general-purpose programming language intended to let programmers write once, run anywhere 
+         
+          Java was originally developed by James Gosling at Sun Microsystems. It was released in May 1995 as a core component of Sun's Java platform. The original and reference implementation Java compilers, virtual machines, and class libraries were originally released by Sun under proprietary licenses. As of May 2007, in compliance with the specifications of the Java Community Process, Sun had relicensed most of its Java technologies under the GPL-2.0-only license. Oracle offers its own HotSpot Java Virtual Machine, however the official reference implementation is the OpenJDK JVM which is free open-source software and used by most developers and is the default JVM for almost all Linux distributions.
+As of March 2024, Java 22 is the latest version. Java 8, 11, 17, and 21 are previous LTS versions still officially supported.
+        </p><br>
+        <a href="{% url 'java'%}" class="btn btn-info">Learn More</a>
+
+        <a href="{% url 'registration'%}" class="btn btn-info">Registration</a>
+      </div>
+      <div class="card-footer">
+        <small class="text-muted">Last updated 3 mins ago</small>
+      </div>
+    </div>
+    <div class="card">
+      <img class="card-img-top" src="https://images.spiceworks.com/wp-content/uploads/2022/04/26162218/AWS.png" alt="Card image cap">
+      <div class="card-body">
+        <h3 class="card-title">Aws</h3>
+        <p class="card-text">Amazon Web Services (AWS) is a leading top platform in providing the web services of various domains. AWS follows the trends of digital IT and comes up needy services with optimized performances covering a wide range of services from Compute to Storage. It covers a wider range of customers of different domains to expand their business operations. This Article covers the fundamentals of AWS and its scope of IT business.
+          AWS stands for Amazon Web Services, It is an expanded cloud computing platform provided by Amazon Company. AWS provides a wide range of services with a pay-as-per-use pricing model over the Internet such as Storage, Computing power, Databases, Machine Learning services, and much more. AWS facilitates for both businesses and individual users with effectively hosting the applications, storing the data securely, and making use of a wide variety of tools and services improving management flexibility for IT resources.
+        </p><br>
+
+        <a href="{% url 'aws'%}" class="btn btn-info">Learn More</a>
+
+        <a href="{% url 'registration'%}" class="btn btn-info">Registration</a>
+      </div>
+      <div class="card-footer">
+        <small class="text-muted">Last updated 3 mins ago</small>
+      </div>
+    </div>
+  </div>
+ 
+      {% endblock body %}
